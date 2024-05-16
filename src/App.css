@@ -1,0 +1,306 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* ------------------------------------------------- */
+/* customize map container */
+#map {
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+  z-index: 1;
+}
+
+#map2 {
+  position: absolute;
+  right: 0;
+  top: 0;
+  overflow: hidden;
+  width: 50%;
+  height: 100%;
+  z-index: 1;
+  border: 1px dashed black;
+  border-radius: 0px 10px 10px 0px;
+}
+
+#map3 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+  width: 50%;
+  height: 100%;
+  z-index: 1;
+  border: 1px dashed black;
+  border-radius: 10px 0px 0px 10px;
+}
+#map22 {
+  position: absolute;
+  top:0;
+  right: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 50%;
+  z-index: 1;
+  border: 1px dashed black;
+  border-radius: 10px 10px 0px 0px;
+}
+
+#map33 {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 50%;
+  z-index: 1;
+  border: 1px dashed black;
+  border-radius: 0px 0px 10px 10px;
+}
+
+.mapInFiles {
+  position: relative;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 90px;
+  z-index: 1;
+  border: 1px solid black;
+  border-radius: 10px 10px 10px 10px;
+}
+/* ------------------------------------------------- */
+/* customize scrollbar */
+.thin_scroll{
+  scrollbar-width: thin;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  direction: rtl;
+  height: 2em
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #ffffff;
+  opacity: 5%;
+  height: 70%;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #b7bbb9;
+  border-radius: '5px';
+  outline: '1px solid slategrey';
+  opacity: 5%;
+  height: 50%;
+}
+
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(6, 112, 107);
+  height: 50%;
+}
+
+/* ------------------------------------------------- */
+/* leaflet tooltip-class */
+.leaflet-tooltip {
+  position: absolute;
+  font-family: Bnazanin;
+  text-align: center;
+  /*min-width: 100px;*/
+  width: auto;
+  padding: -30px;
+  background-color: rgba(37,45,6,1);
+  /*background-image: linear-gradient(rgba(37,45,6,0.90), rgba(57,62,35,0.50));*/
+  border: 1px solid #ded714;
+  border-radius: 5px;
+  color: white;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  pointer-events: none;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.4);
+  z-index: 970;
+}
+
+
+
+/* ------------------------------------------------- */
+/* customize footer */
+.footer {
+  flex-shrink: 0;
+  text-align: center;
+  background-color: #5c086d;
+  color: white;
+  height: 4.5vh;
+  padding-top: 103;
+
+}
+
+/* ------------------------------------------------- */
+/* customize look of leaflet scale controls */
+
+.leaflet-control-scale-line {
+  margin-left: 30;
+  border: 2px solid rgb(119, 119, 119);
+  border-top: none;
+  line-height: 1.1;
+  padding: 2px 5px 1px;
+  white-space: nowrap;
+  overflow: hidden;
+  box-sizing: border-box;
+  background: #fff;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.leaflet-bottom .leaflet-control-scale {
+  margin-bottom: 0px;
+  margin-right: 50px;
+}
+
+
+/* ------------------------------------------------- */
+/* customize look of leaflet attribution controls */
+
+.leaflet-control-attribution a {
+  text-decoration: none;
+}
+.leaflet-touch .leaflet-control-attribution, .leaflet-touch .leaflet-control-layers, .leaflet-touch .leaflet-bar{
+  background-color: rgba(255, 255, 255, 0);
+}
+/* ------------------------------------------------- */
+
+.easyPrintHolder .A4Portrait { 
+  background-color: #000;
+  font-size: 50;
+}
+
+.leaflet-control .leaflet-bar .leaflet-control-easyPrint  {
+  background-color: #000;
+  border-radius: 20;
+  margin-right:30;
+}
+
+.leaflet-control-easyPrint-button{
+  margin-right:30;
+  background-image: none;
+  background-color: #000;
+  border-radius: 20;
+}
+.leaflet-control-easyPrint {
+  margin-left:30;
+  background-color: #054750;
+}
+
+/* ------------------------------------------------- */
+/* customize look of leaflet popup */
+.red-border .leaflet-popup-content {
+  border:3px solid red;
+}
+.red-border .leaflet-popup-tip {
+  border:6px dashed #e2eaa1;
+}
+
+.leaflet-popup-content-wrapper {
+  font-family: Bnazanin;
+  background-color: rgba(37,45,6,0.8);
+  border: 1px solid #f5f117;
+  width: auto;
+  max-height: 100vh;
+  font-weight: 100;
+  font-size: 15;
+  z-index: 602;
+
+  }
+
+
+/* ------------------------------------------------- */
+/* customize look of leaflet icon for area measurement */
+.my-own-icon {
+  background:#054750;
+  border:1px solid rgba(255,255,255,0.5);
+  font-weight:bold;
+  text-align:center;
+  border-radius:50%;
+  line-height:30px;
+}
+
+/* ------------------------------------------------- */
+/* customize datepicker */
+.custom-datepicker .MuiInputBase-input {
+  /* Add any other desired styling for the toolbar */
+  width: 100%;
+  font-family: Bnazanin;
+}
+
+.custom-datepicker .MuiOutlinedInput-notchedOutline {
+  /* Add any other desired styling for the toolbar */
+  width: 100%;
+  font-family: Bnazanin;
+}
+
+.custom-datepicker-toolbar {
+  /* Add any other desired styling for the toolbar */
+  width: 100%;
+  font-family: Bnazanin;
+}
+
+.MuiToolbar-root.MuiToolbar-regular.MuiPickersToolbar-toolbar.MuiPickersDatePickerRoot-toolbar.MuiToolbar-gutters {
+  background-color: rgba(37,45,6,1); /* Change the background color of the toolbar to red */
+  /* Add any other desired styling for the toolbar */
+  font-family: Bnazanin;
+}
+.MuiDialogActions-root .MuiPickersModal-withAdditionalAction .MuiDialogActions-spacing {
+  font-family: Bnazanin;
+}
+.MuiButton-label{
+  font-family: Bnazanin;
+  color: rgba(37,45,6,1);
+}
+.MuiPickersSlideTransition-transitionContainer .MuiPickersCalendarHeader-transitionContainer{
+  font-family: Bnazanin; 
+}
+.MuiPickersDay-current .MuiPickersDay-daySelected {
+  color: white;
+ background-color: rgba(37,45,6,1);
+}
